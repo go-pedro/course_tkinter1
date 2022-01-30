@@ -25,6 +25,11 @@ def button_clicked():
 	print('Button clicked')
 
 
+#funtion with arguments
+def select(option):
+	print(option)
+
+
 
 # place a label on the root window
 message = tk.Label(root, text="Hello, World!")
@@ -38,6 +43,17 @@ message_2.pack()
 #button with trigger comand
 button=ttk.Button(root,text='Clicked me', command=button_clicked)
 button.pack()
+
+#buttons with command with arguments
+button1=ttk.Button(root,text='Rock', command=lambda:select('Rock'))
+button1.pack()
+
+button2=ttk.Button(root,text='Paper', command=lambda:select('Paper'))
+button2.pack()
+
+button3=ttk.Button(root,text='Scissors', command=lambda:select('Scissors'))
+button3.pack()
+
 
 # keep the window displaying
 root.mainloop()
