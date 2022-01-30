@@ -24,5 +24,16 @@ root.iconbitmap('./img/pedras.ico')
 label=ttk.Label(root,text='this is a label')
 label.pack(ipadx=10,ipady=10)
 
+#show a Label with text formated
+label=ttk.Label(root,text='this is a label in helvetica 14',font=('Helvetica',14))
+label.pack(ipadx=10,ipady=10)
+
+
+#displaying an image as in Label
+photo=tk.PhotoImage(file='./img/pitao.png')
+image_label=ttk.Label(root, text='Python', image=photo, padding=5, compound='top')
+image_label.pack()
+
+
 # keep the window displaying
 root.mainloop()
