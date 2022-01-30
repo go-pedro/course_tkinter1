@@ -11,6 +11,7 @@ root.title('Tkinter Window Demo')
 
 #add window dimensions
 root.geometry('600x400+50+50')
+root.resizable(False, False) #if both width and height can not be resize
 
 
 # place a label on the root window
