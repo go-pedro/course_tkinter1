@@ -9,6 +9,9 @@ root = tk.Tk()
 #add title
 root.title('Tkinter Window Demo')
 
+#add window dimensions
+root.geometry('600x400+50+50')
+
 
 # place a label on the root window
 message = tk.Label(root, text="Hello, World!")
